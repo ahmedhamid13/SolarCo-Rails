@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: solar_api_production
-  username: solar_api
-  password: <%= ENV['SOLAR_API_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
